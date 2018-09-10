@@ -1,5 +1,8 @@
 def div42by(divideBy):
-    return 42 / divideBy
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print('Erro: You try to devide by zero.')    
 
 
 print(div42by(2))
